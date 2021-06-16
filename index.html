@@ -73,12 +73,15 @@
 
   <header class="header">
     <div class="header__inner">
+      <button class="menu__btn">
+        <span class="menu__btn-line"></span>
+      </button>
       <ul class="menu__list">
         <li class="menu__list-item menu__list-item--drop">
           <a class="menu__list-link" href="catalog.html">Номера и цены</a>
         </li>
         <li class="menu__list-item menu__list-item--drop">
-          <a class="menu__list-link" href="#">Услуги</a>
+          <a class="menu__list-link" href="#services">Услуги</a>
           <ul class="menu__sublist">
             <li class="menu__sublist-item">
               <a class="menu__sublist-link" href="#">Сибирский чан</a>
@@ -95,16 +98,16 @@
           </ul>
         </li>
         <li class="menu__list-item menu__list-item--drop">
-          <a class="menu__list-link" href="#">О базе отдыха</a>
+          <a class="menu__list-link" href="#reasons">О базе отдыха</a>
         </li>
         <li class="menu__list-item">
-          <a class="menu__list-link" href="#">Отзывы</a>
+          <a class="menu__list-link" href="#testimonials">Отзывы</a>
         </li>
         <li class="menu__list-item">
-          <a class="menu__list-link" href="#">Контакты</a>
+          <a class="menu__list-link" href="#contacts">Контакты</a>
         </li>
       </ul>
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <img class="logo__img" src="images/logo.png" alt="Логотип">
       </a>
       <nav class="menu">
@@ -161,7 +164,7 @@
 
 
 
-  <section class="reasons">
+  <section class="reasons" id="reasons">
     <div class="container">
       <h2 class="reasons__title">
         Причин, почему для отдыха на
@@ -595,7 +598,7 @@
 
 
 
-  <section class="services">
+  <section class="services" id="services">
     <div class="container">
       <h2 class="services__title">Услуги и развлечения</h2>
       <div class="services__items">
@@ -753,7 +756,7 @@
 
 
 
-  <section class="testimonials">
+  <section class="testimonials" id="testimonials">
     <div class="container">
       <h2 class="testimonials__title">Отзывы о базе отдыха “Фрегат”</h2>
       <div class="testimonials__items">
@@ -891,7 +894,7 @@
 
 
 
-  <section class="contacts">
+  <section class="contacts" id="contacts">
     <div class="container">
       <div class="contacts__links">
         <a class="contacts__link" href="#">Схема проезда</a>
@@ -901,7 +904,7 @@
       <div class="contacts__content">
         <img class="contacts__img" src="images/contacts/scheme.jpg" alt="image">
         <div class="contacts__info">
-          <h3 class="contacts__info-title">Наши конакты</h3>
+          <h3 class="contacts__info-title">Наши контакты</h3>
           <div class="contacts__call">
             <p class="contacts__call-title">Звоните по телефонам:</p>
             <div class="contacts__call-links">
@@ -938,17 +941,17 @@
         <nav class="footer__links">
           <div class="footer__links-column">
             <a class="footer__link" href="index.html">Главная</a>
-            <a class="footer__link" href="#">Номера и цены</a>
-            <a class="footer__link" href="#">Услуги и развлечения</a>
+            <a class="footer__link" href="catalog.html">Номера и цены</a>
+            <a class="footer__link" href="#services">Услуги</a>
           </div>
           <div class="footer__links-column">
-            <a class="footer__link" href="#">О нас</a>
+            <a class="footer__link" href="#reasons">О нас</a>
             <a class="footer__link" href="#">Памятка туриста</a>
-            <a class="footer__link" href="#">Схема проезда</a>
+            <a class="footer__link" href="#contacts">Схема проезда</a>
           </div>
           <div class="footer__links-column">
-            <a class="footer__link" href="#">Отзывы</a>
-            <a class="footer__link" href="#">Контакты</a>
+            <a class="footer__link" href="#testimonials">Отзывы</a>
+            <a class="footer__link" href="#contacts">Контакты</a>
           </div>
         </nav>
         <a class="footer__btn" href="#">получить консультацию</a>
