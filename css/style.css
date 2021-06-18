@@ -902,6 +902,19 @@ body {
 
 .gallery__img {
 	margin-bottom: 40px;
+	
+}
+
+.gallery__link {
+	display: block;
+	position: relative;
+}
+
+.gallery__link:hover::before {
+	content: url('../images/zoom.svg');
+	position: absolute;
+	top: 30px;
+	right: 30px;
 }
 
 .gallery__items {
