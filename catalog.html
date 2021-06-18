@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="fonts/stylesheet.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -65,10 +66,22 @@
             <img class="social__img" src="images/whatsapp.svg" alt="whatsapp">
           </a>
         </div>
-        <a class="phone-call" href="#">заказать звонок</a>
+        <a class="phone-call" href="#modal" rel="modal:open">заказать звонок</a>
       </nav>
     </div>
   </header>
+
+
+
+  <div class="modal" id="modal">
+    <h3 class="modal__title">Забронировать номер</h3>
+    <form class="modal__form">
+      <label><p class="modal__form-label">Имя</p><input type="text" class="modal__form-input" placeholder="Введите ваше имя"></label>
+      <label><p class="modal__form-label">Телефон</p><input type="tel" class="modal__form-input" placeholder="Введите ваш номер телефона"></label>
+      <button class="modal__form-btn" type="submit">Забронировать номер</button>
+      <p class="modal__form-agreement"><input class="modal__form-check" type="checkbox">Я принимаю условия передачи данных</p>
+    </form>
+  </div>
 
 
 
@@ -360,7 +373,7 @@
             <a class="footer__link" href="index.html#contacts">Контакты</a>
           </div>
         </nav>
-        <a class="footer__btn" href="#">получить консультацию</a>
+        <a class="footer__btn" href="#modal" rel="modal:open">получить консультацию</a>
         <div class="footer__info">
           <a class="footer__phone" href="tel:+73952560026">+7 (3952) 56-00-26</a>
           <p class="footer__schedule">Режим работы с 10:00 до 22:00</p>
@@ -384,6 +397,7 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="fonts/stylesheet.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -48,7 +49,7 @@
           <a class="menu__list-link" href="index.html#contacts">Контакты</a>
         </li>
       </ul>
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <img class="logo__img" src="images/logo.png" alt="Логотип">
       </a>
       <nav class="menu">
@@ -65,10 +66,22 @@
             <img class="social__img" src="images/whatsapp.svg" alt="whatsapp">
           </a>
         </div>
-        <a class="phone-call" href="#">заказать звонок</a>
+        <a class="phone-call" href="#modal" rel="modal:open">заказать звонок</a>
       </nav>
     </div>
   </header>
+
+
+
+  <div class="modal" id="modal">
+    <h3 class="modal__title">Забронировать номер</h3>
+    <form class="modal__form">
+      <label><p class="modal__form-label">Имя</p><input type="text" class="modal__form-input" placeholder="Введите ваше имя"></label>
+      <label><p class="modal__form-label">Телефон</p><input type="tel" class="modal__form-input" placeholder="Введите ваш номер телефона"></label>
+      <button class="modal__form-btn" type="submit">Забронировать номер</button>
+      <p class="modal__form-agreement"><input class="modal__form-check" type="checkbox">Я принимаю условия передачи данных</p>
+    </form>
+  </div>
 
 
 
@@ -135,30 +148,42 @@
 
 
   <div class="room__tabs">
-    <a class="room__tab room__tab---active" href="#">Описание номера</a>
-    <a class="room__tab" href="#">Услуги Фрегата</a>
-    <a class="room__tab" href="#">Отзывы клиентов</a>
+    <button class="room__tab room__tab--active" data-filter=".category-a">Описание номера</button>
+    <button class="room__tab" data-filter=".category-b">Услуги Фрегата</button>
+    <button class="room__tab" data-filter=".category-c">Отзывы клиентов</button>
   </div>
 
-  <div class="room__desc">
-    <div class="container">
-      <p class="room__desc-text">
-        Номер с двумя односпальными кроватями (Можно сдвинуть/раздвинуть), две прикроватные тумбы, 
-        платяной  шкаф, туалетный столик с зеркалом и пуфом, прикроватные светильники. Мягкий уголок, 
-        обеденный стол, стулья.
-      </p>
-      <div class="room__desc-list">
-        <p class="room__desc-item">
-          В номере есть телевизор, электрический чайник, холодильник. Чайные пары, посуда для закусок и прохладительных напитков.
+  <div class="room__tab-content">
+
+    <div class="room__desc mix category-a" data-order="1">
+      <div class="container">
+        <p class="room__desc-text">
+          Номер с двумя односпальными кроватями (Можно сдвинуть/раздвинуть), две прикроватные тумбы, 
+          платяной  шкаф, туалетный столик с зеркалом и пуфом, прикроватные светильники. Мягкий уголок, 
+          обеденный стол, стулья.
         </p>
-        <p class="room__desc-item">
-           В ванной комнате: унитаз, умывальный стол с зеркалом, душевая кабина, мыло, шампунь, индивидуальные умывальные принадлежности, фен.
-        </p>
-        <p class="room__desc-item">
-          Возможно заселение третьего человека, раскладная кровать за дополнительную оплату.
-        </p>
+        <div class="room__desc-list">
+          <p class="room__desc-item">
+            В номере есть телевизор, электрический чайник, холодильник. Чайные пары, посуда для закусок и прохладительных напитков.
+          </p>
+          <p class="room__desc-item">
+             В ванной комнате: унитаз, умывальный стол с зеркалом, душевая кабина, мыло, шампунь, индивидуальные умывальные принадлежности, фен.
+          </p>
+          <p class="room__desc-item">
+            Возможно заселение третьего человека, раскладная кровать за дополнительную оплату.
+          </p>
+        </div>
       </div>
     </div>
+
+    <div class="room__services mix category-b" data-order="2">
+      
+    </div>
+
+    <div class="room__testimonials mix category-c" data-order="3">
+      
+    </div>
+
   </div>
 
 
@@ -499,7 +524,7 @@
             <a class="footer__link" href="index.html#contacts">Контакты</a>
           </div>
         </nav>
-        <a class="footer__btn" href="#">получить консультацию</a>
+        <a class="footer__btn" href="#modal" rel="modal:open">получить консультацию</a>
         <div class="footer__info">
           <a class="footer__phone" href="tel:+73952560026">+7 (3952) 56-00-26</a>
           <p class="footer__schedule">Режим работы с 10:00 до 22:00</p>
@@ -522,7 +547,9 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
