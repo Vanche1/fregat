@@ -121,5 +121,18 @@ $(function(){
 		$('.menu__list').removeClass('menu__list--active');
 		$('.header').removeClass('header--active');
 	});
+
+	$('.room__tab').on('click', function() {
+		$('.room__tab').removeClass('room__tab--active');
+		$(this).toggleClass('room__tab--active');
+	});
+
+
+	
+	var Mixer = mixitup ( '.room__tab-content' , {
+    	load: {
+			filter: '.category-a'
+		}
+	});
 	
 });
