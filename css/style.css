@@ -630,6 +630,7 @@ body {
 }
 
 .reserve__path-item {
+	display: flex;
 	margin-right: 100px;
 	font-weight: 500;
 	font-size: 25px;
