@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -737,29 +738,45 @@
       <div class="gallery__inner">
         <div class="gallery__items">
           <div class="gallery__big">
-            <img class="gallery__img" src="images/gallery/1.jpg" alt="image">
+            <a class="gallery__link" data-fancybox="gallery" href="images/gallery/1.jpg">
+              <img class="gallery__img" src="images/gallery/1.jpg" alt="image">
+            </a>
           </div>
           <div class="gallery__small">
             <div class="gallery__small-left">
-              <img class="gallery__img" src="images/gallery/2.jpg" alt="image">
-              <img class="gallery__img" src="images/gallery/3.jpg" alt="image">
+              <a class="gallery__link" data-fancybox="gallery" href="images/gallery/2.jpg">
+                <img class="gallery__img" src="images/gallery/2.jpg" alt="image">
+              </a>
+              <a class="gallery__link" data-fancybox="gallery" href="images/gallery/3.jpg">
+                <img class="gallery__img" src="images/gallery/3.jpg" alt="image">
+              </a>
             </div>
             <div class="gallery__small-right">
-              <img class="gallery__img" src="images/gallery/4.jpg" alt="image">
+              <a class="gallery__link" data-fancybox="gallery" href="images/gallery/4.jpg">
+                <img class="gallery__img" src="images/gallery/4.jpg" alt="image">
+              </a>
             </div>
           </div>
         </div>
         <div class="gallery__items gallery__items--reverse">
           <div class="gallery__big">
-            <img class="gallery__img" src="images/gallery/8.jpg" alt="image">
+            <a class="gallery__link" data-fancybox="gallery" href="images/gallery/8.jpg">
+              <img class="gallery__img" src="images/gallery/8.jpg" alt="image">
+            </a>
           </div>
           <div class="gallery__small">
             <div class="gallery__small-left">
-              <img class="gallery__img" src="images/gallery/6.jpg" alt="image">
-              <img class="gallery__img" src="images/gallery/5.jpg" alt="image">
+              <a class="gallery__link" data-fancybox="gallery" href="images/gallery/6.jpg">
+                <img class="gallery__img" src="images/gallery/6.jpg" alt="image">
+              </a>
+              <a class="gallery__link" data-fancybox="gallery" href="images/gallery/5.jpg">
+                <img class="gallery__img" src="images/gallery/5.jpg" alt="image">
+              </a>
             </div>
             <div class="gallery__small-right">
-              <img class="gallery__img" src="images/gallery/7.jpg" alt="image">
+              <a class="gallery__link" data-fancybox="gallery" href="images/gallery/7.jpg">
+                <img class="gallery__img" src="images/gallery/7.jpg" alt="image">
+              </a>
             </div>
           </div>
         </div>
@@ -997,6 +1014,7 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
