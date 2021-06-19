@@ -3380,6 +3380,9 @@ body {
 		margin-bottom: 15px;
 		text-decoration: underline;	
 	}
+	.contacts__link--active {
+		text-decoration: none;
+	}
 	.contacts__img {
 		height: 350px;
 	}
@@ -3662,22 +3665,34 @@ body {
 	}
 	.reserve__form-select {
 		width: 290px;
+		font-size: 14px;
 	}
 	.reserve__form-number {
 		width: 290px;
+		font-size: 14px;
 	}
 	.reserve__form-input {
 		width: 290px;
+		font-size: 14px;
 	}
 	.reserve__form-area {
 		width: 290px;
+		font-size: 14px;
 	}
 	.reserve__form-btn {
     padding: 15px 28px;
+    font-size: 15px;
 	}
 
+	.placement__item-img {
+		margin-bottom: 10px;
+	}
 	.placement__item-text {
 		width: 100%;
+		margin-bottom: 20px;
+	}
+	.placement__info {
+		margin-bottom: 20px;
 	}
 
 	.testimonials__items {
@@ -3747,6 +3762,12 @@ body {
 		width: 145px;
 	}
 
+	.reasons {
+		margin-top: 50px;
+	}
+	.reasons__title {
+		padding-bottom: 50px;
+	}
 	.reasons__item-img {
 		height: 250px;
 	}
